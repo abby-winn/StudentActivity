@@ -4,8 +4,11 @@ AddUser.js
 import React from 'react';
 import './AddUser.css';
 const AddUser = props => {
+    function addUserHandler(event) {
+        event.preventDefault();
+    }
     return (
-        <form>
+        <form onSubmit={addUserHandler}>
             <label htmlFor="username">Username</label>
             <input id="username" type="text"></input>
             <label htmlFor="age">Age (years)</label>
@@ -14,4 +17,5 @@ const AddUser = props => {
         </form>
     );
 };
+
 export default AddUser; 
