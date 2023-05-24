@@ -14,6 +14,11 @@ const AddUser = props => {
             <label htmlFor="age">Age (years)</label>
             <input id="age" type="number"></input>
             <button type="submit">Add User</button>
+            <Card>
+	        <form onSubmit={addUserHandler}>
+       		     … (code added previously)
+	        </form>
+            </Card>
         </form>
     );
 };
