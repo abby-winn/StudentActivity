@@ -1,7 +1,7 @@
 AddUser.js
 
 
-import React from 'react';
+import React, {useState} from 'react';
 import './AddUser.css';
 const AddUser = props => {
     function addUserHandler(event) {
@@ -13,7 +13,7 @@ const AddUser = props => {
             <input id="username" type="text"></input>
             <label htmlFor="age">Age (years)</label>
             <input id="age" type="number"></input>
-            <button type="submit">Add User</button>
+            <Button type="submit">Add User</Button>
             <Card>
 	        <form onSubmit={addUserHandler}>
        		     … (code added previously)
